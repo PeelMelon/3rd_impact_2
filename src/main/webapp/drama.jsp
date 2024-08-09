@@ -285,30 +285,30 @@
             </div>
             <div class="video">
                 <div class="thumbnail">
-                    <img src="https://i.ytimg.com/vi/ROjFr9yz0tI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBBMnCqyoipls2ieWWSLwXL2A56pg" alt="">
+                    <img src="./drama_images/drama_thum/20240801_200610_635_1.jpg" alt="gt">
                 </div>
                 <div class="details">
                     <div class="logo">
-                        <img src="https://yt3.ggpht.com/u-wNEA8k1heDBtOU92ZapUEc3i7scrh_eI6usjVdGwymgIi8olLNwUJgjq2S5iaxCYLEjpaZ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        <img src="./drama_images/drama_thum/20240516_102609_152.png" alt="">
                     </div>
                     <div class="title">
-                        <h2> How To Build A $10,000 Website With No-Code +AI  </h2>
-                        <a href="#">WeAreNoCode</a>
+                        <h2>엄태구는 결혼이 하고 싶은데🥺 바쁜 한선화 붙잡고 혼자 안절부절 | JTBC</h2>
+                        <a href="#">놀아주는 여자</a>
                         <span>video views · time </span>
                     </div>
                 </div>
             </div>
             <div class="video">
                 <div class="thumbnail">
-                    <img src="https://i.ytimg.com/vi/ROjFr9yz0tI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBBMnCqyoipls2ieWWSLwXL2A56pg" alt="">
+                    <img src="./drama_images/drama_thum/20240801_200438_575_1.jpg" alt="">
                 </div>
                 <div class="details">
                     <div class="logo">
-                        <img src="https://yt3.ggpht.com/u-wNEA8k1heDBtOU92ZapUEc3i7scrh_eI6usjVdGwymgIi8olLNwUJgjq2S5iaxCYLEjpaZ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        <img src="./drama_images/drama_thum/20240516_102609_152.png" alt="">
                     </div>
                     <div class="title">
-                        <h2> How To Build A $10,000 Website With No-Code +AI  </h2>
-                        <a href="#">WeAreNoCode</a>
+                        <h2>상상만 해도 행복한 결혼🤭 아기 안은 한선화 모습에 넋 놓은 엄태구💫 | JTBC</h2>
+                        <a href="#">놀아주는 여자</a>
                         <span>video views · time </span>
                     </div>
                 </div>
