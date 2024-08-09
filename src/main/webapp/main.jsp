@@ -13,37 +13,44 @@
         String title;
         String description;
         String thumbnailUrl;
-        String videoUrl;
+        String videoID;
         String views;
         String likes;
+        String dislike;
         String logoUrl;
         String uploaderId;
     }
 
     List<Video> videos = new ArrayList<>();
+    
+    String selectSql = "SELECT v.seq, v.title, v.description, v.thumbnail_url, v.video_id, v.views, v.logo_url, v.uploader_id, "
+            + "COALESCE(vl.likes, 0) AS likes, COALESCE(vl.dislike, 0) AS dislike "
+            + "FROM video v "
+            + "LEFT JOIN video_like vl ON v.seq = vl.seq";
 
-    try (Connection conn = DBManager.getDBConnection()) {
-        String selectSql = "SELECT seq, title, description, thumbnail_url, video_url, views, likes, logo_url, uploader_id FROM video";
-        try (PreparedStatement pstmt = conn.prepareStatement(selectSql);
-             ResultSet rs = pstmt.executeQuery()) {
-            while (rs.next()) {
-                Video video = new Video();
-                video.seq = rs.getString("seq");
-                video.title = rs.getString("title");
-                video.description = rs.getString("description");
-                video.thumbnailUrl = rs.getString("thumbnail_url");
-                video.videoUrl = rs.getString("video_url");
-                video.views = rs.getString("views");
-                video.likes = rs.getString("likes");
-                video.logoUrl = rs.getString("logo_url");
-                video.uploaderId = rs.getString("uploader_id");
-                videos.add(video);
-            }
-        }
-    } catch (SQLException e) {
-        e.printStackTrace();
-    }
-%>
+    try (Connection conn = DBManager.getDBConnection();
+            PreparedStatement pstmt = conn.prepareStatement(selectSql);
+            ResultSet rs = pstmt.executeQuery()) {
+
+           while (rs.next()) {
+               Video video = new Video();
+               video.seq = rs.getString("seq");
+               video.title = rs.getString("title");
+               video.description = rs.getString("description");
+               video.thumbnailUrl = rs.getString("thumbnail_url");
+               video.videoID = rs.getString("video_id");
+               video.views = rs.getString("views");
+               video.likes = rs.getString("likes");
+               video.dislike = rs.getString("dislike");
+               video.logoUrl = rs.getString("logo_url");
+               video.uploaderId = rs.getString("uploader_id");
+
+               videos.add(video);
+           }
+       } catch (SQLException e) {
+           e.printStackTrace();
+       }
+   %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,8 +95,27 @@
     <!--  아이콘 불러오기 -->
     <script src="https://kit.fontawesome.com/12d13cde63.js" crossorigin="anonymous"></script>
     <script defer src="./js/main.js"></script>
-   
+    
+    <script>
+        $(document).ready(function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const search = urlParams.get('search');
+            if (search) {
+                $('.search input').val(search);
+                $('.video').each(function() {
+                    const videoTitle = $(this).find('h2').text().toLowerCase();
+                    if (videoTitle.includes(search.toLowerCase())) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            }
+        });
+    </script>
+    
 </head>
+
 <body>
 	<!-- ------HEADER ------ -->
    	<%@ include file="./header.jsp" %>
@@ -97,6 +123,7 @@
    <!------MAIN------>
    <div class="YtBody">
     <%@ include file="./sidebar.jsp" %>
+    
     <div class="video_selection">
         <div class="recommendboxes">
             <button class="box">전체</button>
@@ -105,6 +132,7 @@
             <button class="box">뉴스</button>
             <button class="box">요리</button>
         </div>
+        
         <div class="container">
         <%
         	for (Video video : videos) {
@@ -122,10 +150,16 @@
 	                        <h2><%= video.title %></h2>
 	                    </div>
 	                </div>
-	                <a href="#"><%= video.uploaderId %></a>
+	                
+	                <div id = "uploader">
+		                	<h5><%= video.uploaderId %></h5>
+		                </div>
+	                
+	                
                     <div class = "views-time">
-                    	<span><%= video.views %> views · <%= video.likes %> likes</span>
-                   	</div>
+	                    	<span>조회수 <%= video.views %> 회 · 좋아요 <%= video.likes %> </span>
+	                   	</div>
+                   	
             	</div>
            </div>
             <%

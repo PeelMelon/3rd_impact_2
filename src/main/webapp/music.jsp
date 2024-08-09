@@ -6,11 +6,6 @@
 <%@ page import = "java.sql.SQLException" %>
 <%@ page import = "dob.DBManager" %>
 
-<%
-    HttpSession session1 = request.getSession(false);
-    String memberID = (session != null) ? (String) session.getAttribute("memberID") : null;
-%> 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,9 +19,12 @@
     <!-- 3. reset.css 세팅(cdn) -->
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
     <!-- 4. 커스템 css파일 세팅(local) -->
-    <link href="./css/youtubemain.css" rel="stylesheet">
+    
     <link href="./css/music.css" rel="stylesheet">
     <link href="./css/popup.css" rel="stylesheet">
+    <link href="./css/header.css" rel="stylesheet">
+    <link href="./css/sidebar.css" rel="stylesheet">
+    
     <!-- 5. 폰트 설정 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,54 +53,21 @@
     
     <!--  아이콘 불러오기 -->
     <script src="https://kit.fontawesome.com/12d13cde63.js" crossorigin="anonymous"></script>
-    <script defer src="./js/youtubemain.js"></script>
-    <!-- <script defer src="./js/jquery-3.7.1.js"></script> -->
-    <script src="./js/MV.js"></script>
-    <script src="./js/popup.js"></script>
+    
+    <script defer src="./js/MV.js"></script>
+    <script defer src="./js/popup.js"></script>
+	<script defer src="./js/youtubemain.js"></script>
+
 </head>
-<body>
+
+	<body>
     <!-- ------HEADER ------ -->
-   <header class="header">
-    <div class="header_logo">
-        <button id = "toggleButton">
-            <i class = "fas fa-bars"></i>
-        </button>
-        <a href="./main.jsp">
-        <img src="./images/logo1.png" alt="집요정TV">
-    </div>
+    <%@ include file="./header.jsp" %>
+    
+    <!------MAIN------>
+    <div class="YtBody">
+    <%@ include file="./sidebar.jsp" %>
 
-    <div class="search">
-        <form action="">
-            <div class = "search-inner">
-            <input type="search" placeholder="검색">
-            </div>
-            <button><i class="fas fa-search"></i></button>
-        </form>
-    </div>
-    <div class="header_icons">	
-    	 <%
-            if (memberID == null) {
-        %>
-            <a href="login.jsp"><i id="login" class="fas fa-user-circle">로그인</i></a>
-        <%
-            } else {
-        %>
-            <span id="my_id"><%= memberID %></span>
-            <a href="logout.jsp">
-            <button class="logout-btn">Logout</button>
-            </a>
-            <a href="upload_form.jsp"><i class="fas fa-video"></i></a>
-            <i class="fas fa-ellipsis-h"></i>
-            <i class="fas fa-bell"></i>
-        <%
-            }
-        %>
-    </div>
-   </header>
-
-   <!------MAIN------>
-   <div class="YtBody">
-     <%@ include file="./sidebar.jsp" %>
     <div class="video_selection">
         <div class="recommendboxes">
             <button class="box">전체</button>
@@ -114,9 +79,9 @@
         
         <div class="main-wrap" id="home">
             <div class="newestAlbum" id="newestAlbum">
-                <h1></h1>
+                
                 <div class="new-album">
-                    <ul class="each-song" data-key="124"="dark-mystery-trailer-taking-our-time">
+                    <ul class="each-song"> 
                         <li onclick="openVideo('./video1/supernova.mp4')">
                         
                             <img class="coverImg" src="https://cdnimg.melon.co.kr/cm2/album/images/114/87/023/11487023_20240527154018_500.jpg?1592e95ebf259717f07c393e684b7395/melon/resize/282/quality/80/optimize">
@@ -294,7 +259,7 @@
                 </div>
             </main>
             <div class="music-video" id="mv">
-                <h3>MV</h3>
+                
                 <div class="mv-wrap">
                     <div class="each-mv" data-video-id="jOTfBlKSQYY">
                         <img src="https://i.ytimg.com/vi/jOTfBlKSQYY/maxresdefault.jpg" width="auto" height="100%" class="preview-img">
@@ -1464,5 +1429,6 @@
         
     </div>
     </div>
+   </div>
 </body>
 </html>

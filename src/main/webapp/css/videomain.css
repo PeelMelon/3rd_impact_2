@@ -28,9 +28,10 @@
 }
 
 body {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   min-width: 320px;
   box-sizing: border-box;
+  overflow-x: hidden; /* 수평 스크롤 숨기기 */
 }
 
 ul {
@@ -44,41 +45,41 @@ button:focus {
   outline: none;
 }
 
-.YtBody{
-    margin-top: 70px;
-    display: flex;
-    overflow: hidden;
-    height: calc(100vh -70px);
+.YtBody {
+  margin-top: 70px;
+  display: flex;
+  overflow: hidden;
+  height: calc(100vh - 70px);
 }
 
-.recommendboxes{
-    display: flex;
-    justify-content: flex-start;
-    font-size: 14px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    color:rgb(3,3,3);
-}
-.recommendboxes button.box{
-    margin-right: 10px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: #ddd;
+.recommendboxes {
+  display: flex;
+  justify-content: flex-start;
+  font-size: var(--font-small);
+  margin-left: var(--spacing);
+  margin-bottom: var(--spacing);
+  color: rgb(3, 3, 3);
 }
 
-.video_selection{
-    
-    width: 100%;
-    height: 100%;
-    padding: 15px;
-    overflow-y: hidden;
-    border-top: 1px solid #ddd;
-    background: #f9f9f9; 
-    margin-left: 240px; 
+.recommendboxes button.box {
+  margin-right: var(--spacing);
+  padding: var(--spacing-small) var(--spacing);
+  border-radius: 5px;
+  background-color: #ddd;
+}
+
+.video_selection {
+  width: 100%;
+  height: 100%;
+  padding: var(--spacing);
+  overflow-y: auto; /* 수직 스크롤 활성화 */
+  border-top: 1px solid #ddd;
+  background: #f9f9f9;
+  margin-left: 240px; /* 사이드바가 보일 때의 마진 */
 }
 
 .video_selection.moved {
-    margin-left: 0 !important;
+  margin-left: 15px !important; /* 사이드바가 숨겨졌을 때의 마진 */
 }
 
 /* Video player */
@@ -86,40 +87,41 @@ button:focus {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 70px 0 0 0;
+  margin: 20px 0 0 0;
   padding-right: 0;
   box-sizing: border-box;
 }
 
 .allVideo {
-  display: flex;  
+  display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.videoAndNext{
-	width: 65%;
-	height:100vh;
-	
-}
-.player{
-	 flex: 1;
+
+.videoAndNext {
+  width: calc(100% - 10%); /* 비디오와 사이드바의 공간 계산 */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
+.player {
+  flex: 1;
+  overflow: hidden; /* 비디오 영역의 스크롤 숨기기 */
+}
 
-.player iframe {
-  	width: 100%;
-  	height: calc(100vh - 300px);
-	border-radius: 20px;
-	margin-left: 0;
-	margin-top: -50px;
+.player video {
+  width: 100%;
+  height: calc(100vh - 250px); /* 영상 높이 조정 */
+  max-height: calc(100vh - 250px); /* 최대 높이 조정 */
+  object-fit: cover; /* 비율 유지하면서 컨테이너에 맞게 조정 */
+  border-radius: 20px;
 }
 
 /* Video info */
 .infoAndUpNext .info {
-	
   padding: var(--spacing);
   margin-left: 30px;
-
 }
 
 /* Metadata */
@@ -136,7 +138,7 @@ button:focus {
 .info .metadata .titleAndButton {
   display: flex;
   width: 1000px;
-  max-width: 1000%;
+  max-width: 100%;
 }
 
 .info .metadata .titleAndButton .title {
@@ -232,8 +234,8 @@ button:focus {
 
 /* Up next */
 .upNext {
-	width: 25%;
-	margin-left: auto;
+  width: 25%;
+  margin-left: auto;
   padding: 0 var(--spacing);
 }
 
@@ -258,7 +260,6 @@ button:focus {
 }
 
 .upNext .item .itemInfo {
- 
   display: flex;
   flex-direction: column;
 }
@@ -283,10 +284,8 @@ button:focus {
   flex-direction: column;
 }
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .infoAndUpNext {
     flex-direction: row;
-  } */
-
-
- 
+  }
+}

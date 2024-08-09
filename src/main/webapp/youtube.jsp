@@ -56,7 +56,7 @@
     <script defer src="./js/youtubemain.js"></script>
     <script src="./js/MV.js"></script>
     <script src="./video.jsp"></script>
-    <script src="./search.jsp"></script>
+    <script src="./search_mp4.jsp"></script>
     <!-- <script defer src="./js/jquery-3.7.1.js"></script> -->
 </head>
 
@@ -87,7 +87,7 @@
             } else {
         %>
             <span id="my_id"><%= memberID %></span>
-            <a href="logout.jsp">
+            <a href="LogoutServlet.java">
             <button class="logout-btn">Logout</button>
             </a>
             <a href="upload_form.jsp"><i class="fas fa-video"></i></a>

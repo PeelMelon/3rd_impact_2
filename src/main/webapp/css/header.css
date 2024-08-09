@@ -42,7 +42,7 @@ button{
     cursor: pointer;
     color: #606060;
 }
-.header .search{
+.header .searchmain .search{
     border-radius: 65%;
 }
 .header .search form{
@@ -50,38 +50,90 @@ button{
     display: flex;
     border: 2px solid #ddd;
 }
-.search .search-inner{
+.header .searchmain .search .search-inner{
     display: flex;
     align-items: center;
     padding: 5px 15px;
  
 }
 
-.search .search-inner img{
+.header .searchmain .search .search-inner img{
     display: flex;
     height: 12px;
     margin-right: 10px;
 }
-.search input{
-    width: 500px;
+.header .searchmain .search .search-inner input[type="search"]{
+    width: 100px;
     height: 100%;
     border: none;
     outline: none;
 }
-.search input::placeholder{
+.header .searchmain .search input::placeholder{
     padding-left: .6rem;
     color: #888;
 }
-.search-inner button{
+.header .searchmain .search .search-inner button{
     background: transparent;
     border:none;
     cursor: pointer;
 }
-.search-inner button:active{
+.header .searchmain .search .search-inner button:active{
     opacity: .8
 }
 .header_icons {
 	margin-right:12px;
+}
+
+.header .searchmain {
+	display: flex;
+    
+}
+
+
+.header .searchmain .search_mp4{
+    border-radius: 65%;
+}
+.header .search_mp4 form{
+    height: 35px;
+    display: flex;
+    border: 2px solid #ddd;
+}
+.header .searchmain .search_mp4 .search-inner{
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+ 
+}
+
+.header .searchmain .search_mp4 .search-inner img{
+    display: flex;
+    height: 12px;
+    margin-right: 10px;
+}
+.header .searchmain .search_mp4 .search-inner input[type="search"]{
+    width: 100px;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+.header .searchmain .search_mp4 input::placeholder{
+    padding-left: .6rem;
+    color: #888;
+}
+.header .searchmain .search_mp4 .search-inner button{
+    background: transparent;
+    border:none;
+    cursor: pointer;
+}
+.header .searchmain .search_mp4 .search-inner button:active{
+    opacity: .8
+}
+.header_icons {
+	margin-right:12px;
+}
+
+.header .searchmain {
+	gap: 20px;
 }
 
 .modal {
@@ -89,20 +141,20 @@ button{
 	position: fixed;
 	z-index:1;
 	right:0;
-	top:0;
-	width:100%;
+	top:5%;
+	width:40%;
 	height:100%;
 	overflow:auto;
-	background-color:rgb(0,0,0);
-	background-color: rgba(0,0,0,0.4);
-	padding-top: 60px;
+	padding: 10px;
+	box-sizing: border-box;
 }
 .modal-content {
 	background-color: #fefefe;
-	margin: 5% auto;
-	padding: 10px;
+	margin: 5% 30%;
+	padding: 20px;
 	border: 1px solid #888;
-	width: 80%;
+	width: 100%;
+	box-sizing:border-box;
 }
 .close {
 	color: #aaa;
@@ -116,6 +168,7 @@ button{
 	text-decoration: none;
 	cursor: pointer;
 }
+
 .modal-button{
 	margin: 10px;
 	padding: 10px;

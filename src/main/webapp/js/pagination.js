@@ -8,8 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
     }
 
-    // 첫 페이지를 표시합니다.
-	function showPage(pageNumber) {
+    function showPage(pageNumber) {
         // 모든 항목을 숨깁니다.
         items.forEach(item => item.style.display = "none");
 
@@ -25,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // 활성 페이지 버튼을 업데이트합니다.
         const buttons = paginationContainer.querySelectorAll("button");
         buttons.forEach(button => button.classList.remove("active"));
-        buttons[pageNumber - 1].classList.add("active");
+        buttons[pageNumber - 1]?.classList.add("active");
     }
 
     function createPaginationButtons() {
@@ -47,5 +46,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // 초기화
     createPaginationButtons();
-    showPage(1);
+    showPage(1); // 첫 페이지를 표시합니다.
 });

@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
-    HttpSession currentsession = request.getSession(false);
-    if (session != null) {
-        session.invalidate();
-    }
-    response.sendRedirect("main.jsp");
+	String currentPage = request.getRequestURL().toString();
+
+	session.setAttribute("redirectURL", currentPage);
+
+    // 로그아웃 서블릿으로 리디렉션
+    response.sendRedirect("LogoutServlet");
 %>

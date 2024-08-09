@@ -16,8 +16,13 @@
 
 .sidebar.hidden {
     left: -240px;
-
 }
+
+.sidebar.hidden ~ .video_selection {
+    margin-left: 0; /* 사이드바가 숨겨질 때 여백 제거 */
+    width: 100%; /* 사이드바가 숨겨졌을 때 전체 너비를 차지 */
+}
+
 .sidebar_nav{
     padding: 10px;
 }
