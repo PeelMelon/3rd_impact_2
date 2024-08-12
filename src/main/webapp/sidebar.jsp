@@ -14,7 +14,7 @@
             <!-- <div class="nav-item">
                 <i class="fa-solid fa-bolt"></i>
                 <span>Shorts</span>
-            	</div> -->
+                </div> -->
             <div class="nav-item">
                 <i class="fab fa-youtube"></i>
                 <span>구독</span>
@@ -44,8 +44,6 @@
                     <span>좋아요 표시한 영상</span>
                 </div>
             </div>
-            
-            
         </div>
         <hr>
         <div class="sidebar_nav">
@@ -54,9 +52,9 @@
                 <span id>게시판</span>
             </div>
             <script>
-                 document.getElementById('board-button').addEventListener('click', function() {
+                document.getElementById('board-button').addEventListener('click', function() {
                      window.location.href = 'board.jsp'; // 음악 파일의 정확한 경로를 입력하세요.
-                 });
+                });
             </script>
             <div class="nav-item" id="music-button">
                 <i class="fa-solid fa-music"></i>

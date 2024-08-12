@@ -1,3 +1,4 @@
+
 package dob;
 
 import java.io.IOException;
@@ -21,3 +22,4 @@ public class LoginStatusServlet extends HttpServlet {
         response.getWriter().write("{\"loggedIn\": \"" + (isLoggedIn ? "true" : "false") + "\"}");
     }
 }
+//커밋용 주석 로그인 스테이터스 서브렛

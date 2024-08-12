@@ -232,9 +232,11 @@
                         <img src="./drama_images/drama_thum/009c0c76-2a59-4613-b72e-71fdf0b0535f.png" alt="hap">
                     </div>
                     <div class="title">
-                        <h2>[6화 선공개] ＂하던 거 마저 해❤＂ 김소현💛채종협 꽁냥 데이트!</h2>
-                        <a href="#">우연일까?</a>
-                        <span>video views · time </span>
+                        <div onclick="openVideo('./video1/if_go_left.mp4')">
+                            <h2>[6화 선공개] ＂하던 거 마저 해❤＂ 김소현💛채종협 꽁냥 데이트!</h2>
+                            <a href="#">우연일까?</a>
+                            <span>video views · time </span>
+						</div>
                     </div>
                 </div>
             </div>
@@ -277,14 +279,13 @@
                         <img src="./drama_images/drama_thum/1467093547237.png" alt="np">
                     </div>
                     <div class="title">
-                    	<div onclick="openVideo('./video1/squid_game2.mp4')">
-	                        <h2>[넷플릭스] 오징어 게임 시즌2 | 공개일 발표</h2>
-	                        <a href="#">Netflix Korea</a>
-	                        <span>video views · time </span>
+                        <div onclick="openVideo('./video1/squid_game2.mp4')">
+                            <h2>[넷플릭스] 오징어 게임 시즌2 | 공개일 발표</h2>
+                            <a href="#">Netflix Korea</a>
+                            <span>video views · time </span>
                         </div>
                     </div>
                 </div>
-                
             </div>
             <div class="video">
                 <div class="thumbnail">
