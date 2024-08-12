@@ -63,7 +63,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- Swiper JavaScript -->
     <script src="https:/unpkg.com/swiper/swiper-bundle.min.js"></script>
-    
+    <script defer src="./js/MV.js"></script>
 </head>
 <body>
     <!-- ------HEADER ------ -->
@@ -277,11 +277,14 @@
                         <img src="./drama_images/drama_thum/1467093547237.png" alt="np">
                     </div>
                     <div class="title">
-                        <h2>[넷플릭스] 오징어 게임 시즌2 | 공개일 발표</h2>
-                        <a href="#">Netflix Korea</a>
-                        <span>video views · time </span>
+                    	<div onclick="openVideo('./video1/squid_game2.mp4')">
+	                        <h2>[넷플릭스] 오징어 게임 시즌2 | 공개일 발표</h2>
+	                        <a href="#">Netflix Korea</a>
+	                        <span>video views · time </span>
+                        </div>
                     </div>
                 </div>
+                
             </div>
             <div class="video">
                 <div class="thumbnail">
