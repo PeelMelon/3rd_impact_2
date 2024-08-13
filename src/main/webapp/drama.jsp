@@ -215,14 +215,14 @@
 	
     <section class="bottom_menu">
         <div class="bot_title">
-            <button class="title_btn_a">
+            <button class="title_btn_a" id="resetButton">
                 지금 인기
             </button>
-			<button class="title_btn_b">
+			<button class="title_btn_b" id="shuffleButton">
                 급상승
             </button>
         </div>
-        <div class="bot_content">
+        <div class="bot_content" id="thumbnailContainer">
 			<div class="video">
                 <div class="thumbnail">
                     <img src="./drama_images/drama_thum/3315f8d2-8c7b-4112-ad49-3ac09561670b_B.jpg" alt="dato">

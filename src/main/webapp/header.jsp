@@ -13,32 +13,32 @@
         <img src="./images/logo1.png" alt="집요정TV">
         </a>
     </div>
-  	<div class="searchmain">
-    	<div class="search_mp4">
-         	<form method="get" action="./search_mp4.jsp">
-            	<div class="search-inner">
-                	<input type="search" name="query" placeholder="검색 Mp4">
-            	</div>
-            	<button type="submit">
-                	<i class="fas fa-search"></i>
-            	</button>
-        	</form>
-    	</div>
+    <div class="searchmain">
+        <div class="search_mp4">
+            <form method="get" action="./search_mp4.jsp">
+                <div class="search-inner">
+                    <input type="search" name="query" placeholder="검색 Mp4">
+                </div>
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
     
-	    <div class="search">
-	         <form action="javascript:void(0);">
-	            <div class = "search-inner">
-	            	<input type="search" placeholder="검색 Url">
-	            </div>
-	            <button type = "submit">
-	                <i class="fas fa-search"></i>
-	            </button>
-	        </form>
-	    </div>
+        <div class="search">
+            <form action="javascript:void(0);">
+                <div class = "search-inner">
+                    <input type="search" placeholder="검색 Url">
+                </div>
+                <button type = "submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
     </div>
     
     <div class="header_icons">	
-    	 <%
+        <%
             if (memberID == null) {
         %>
             <a href="login.jsp"><i id="login" class="fas fa-user-circle">로그인</i></a>
@@ -56,8 +56,8 @@
             }
         %>
     </div>
-   </header>
-   
+</header>
+
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>

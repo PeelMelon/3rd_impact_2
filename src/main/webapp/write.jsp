@@ -55,10 +55,16 @@
     <!-- <script defer src="./js/jquery-3.7.1.js"></script> -->
     <script src="./js/MV.js"></script>
     <script src="./js/popup.js"></script>
+    <script>
+        function regSubmit() {
+    		// form태그 안의 action값으로 이동
+            document.getElementById('form1').submit();
+        }
+    </script>
 </head>
 <body>
     <!-- ------HEADER ------ -->
-   <header class="header">
+    <header class="header">
     <div class="header_logo">
         <button id = "toggleButton">
             <i class = "fas fa-bars"></i>
@@ -76,7 +82,7 @@
         </form>
     </div>
     <div class="header_icons">	
-    	 <%
+        <%
             if (memberID == null) {
         %>
             <a href="login.jsp"><i id="login" class="fas fa-user-circle">로그인</i></a>
@@ -94,10 +100,10 @@
             }
         %>
     </div>
-   </header>
+    </header>
 
-   <!------MAIN------>
-   <div class="YtBody">
+    <!------MAIN------>
+    <div class="YtBody">
     <div id = "sidebar" class="sidebar">
         <div class="sidebar_nav">
             <div class="nav-item">
@@ -204,37 +210,39 @@
 		<div class="board_title">
 			<br>
 			<strong>게시판</strong>
-			<br><br>
+			<br><br><br>
 			<p>아름다운 게시판 글쓰기 문화</p>
 		</div>
 		<br><br>
-		<div class="board_write_wrap">
-			<div class="board_write">
-				<div class="title">
-					<dt>
-						<br>
-						<dt>제목</dt>
-						<dt><input type="text" placeholder="제목 입력"></dt>
-					</dt>
-				</div>
-				<div class="writer">
-					<dt>
-						<br>
-						<dt>글쓴이</dt>
-						<dt><input type="text" placeholder="글쓴이" 입력"></dt>
-					</dt>
+		<form action="./write_insert.jsp" method="post" id="form1" onSubmit="return false">
+			<div class="board_write_wrap">
+				<div class="board_write">
+					<div class="title">
+						<dt>
+							<br>
+							<dt>제목</dt>
+							<dt><input type="text" name="title" placeholder="제목 입력"></dt>
+						</dt>
+					</div>
+					<div class="writer">
+						<dt>
+							<br>
+							<dt>글쓴이</dt>
+							<dt><input type="text" name="writer" placeholder="글쓴이 입력"></dt>
+						</dt>
+					</div>
+					<br>
+					<div class="content">
+						<textarea name="content" placeholder="내용 입력"></textarea>
+					</div>
 				</div>
 				<br>
-				<div class="content">
-					<textarea placeholder="내용입력"></textarea>
+				<div class="bt_wrap">
+					<a href="javascript: regSubmit();" class="btn">등록</a>
+					<a href="<%= request.getContextPath() %>/board.jsp">취소</a>
 				</div>
 			</div>
-			<br>
-			<div class="bt_wrap">
-				<a href="javascript: regSubmit();" class="btn">등록</a>
-				<a href="<%= request.getContextPath() %>/board.jsp">취소</a>
-			</div>
-		</div>
+		</form>
 	</div>
 </div>
 </div>

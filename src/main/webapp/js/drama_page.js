@@ -3,8 +3,8 @@ $(document).ready(function() {
 
 	// 사이드바 토글 기능
 	$("#toggleButton").click(function() {
-    	$("#sidebar").toggleClass("hidden");
-    	$(".video_selection").toggleClass("moved");
+		$("#sidebar").toggleClass("hidden");
+		$(".video_selection").toggleClass("moved");
 	});
 
 	// 서브메뉴 토글 기능
@@ -18,7 +18,7 @@ $(document).ready(function() {
 	// Swiper 초기화
 	const swiper = new Swiper('.swiper-container', {
 		direction: 'horizontal',
-	    loop: false,
+		loop: false,
 		// autoplay: false,
 		slidesPerGroup: 4,
 		spaceBetween: 10,
@@ -38,15 +38,15 @@ $(document).ready(function() {
 		},
 			930: {
 				slidesPerView: 4, // 브라우저가 930보다 클 때
-		        spaceBetween: 10,
-		      },
+				spaceBetween: 10,
+				},
 			1480: {
 		        slidesPerView: 5, // 브라우저가 1480보다 클 때
-		        spaceBetween: 10,
-		      },
+				spaceBetween: 10,
+				},
 			1780: {
 		        slidesPerView: 7, // 브라우저가 1780보다 클 때
-		        spaceBetween: 10,
+				spaceBetween: 10,
 			},
 		},
 		on: {
@@ -58,6 +58,30 @@ $(document).ready(function() {
 			},
 		}
 	});
+	
+	
+	const container = document.getElementById('thumbnailContainer');
+	const thumbnails = Array.from(container.children);
+
+	// 초기 순서 저장
+	const originalOrder = thumbnails.map(thumbnail => thumbnail);
+
+	// 섞기 버튼 기능
+	document.getElementById('shuffleButton').addEventListener('click', function() {
+		const shuffled = thumbnails.slice().sort(() => Math.random() - 0.5);
+		shuffled.forEach(thumbnail => container.appendChild(thumbnail));
+	});
+
+	// 초기화 버튼 기능
+	document.getElementById('resetButton').addEventListener('click', function() {
+		// 기존의 자식 요소 제거
+		container.innerHTML = '';
+
+	// 원래 순서로 복원
+	originalOrder.forEach(thumbnail => container.appendChild(thumbnail));
+	});
+
+
 
 	// 네비게이션 버튼 상태 업데이트 함수
 	function updateNavigationButtons(swiper) {

@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
         buttons.forEach(button => button.classList.remove("active"));
         buttons[pageNumber - 1]?.classList.add("active");
     }
+	
 
     function createPaginationButtons() {
         const totalItems = items.length;
