@@ -319,90 +319,90 @@
             </div>
             <div class="video">
                 <div class="thumbnail">
-                    <img src="https://i.ytimg.com/vi/ROjFr9yz0tI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBBMnCqyoipls2ieWWSLwXL2A56pg" alt="">
+                    <img src="./drama_images/drama_thum/1721729798115.jpg" alt="hi8">
                 </div>
                 <div class="details">
                     <div class="logo">
-                        <img src="https://yt3.ggpht.com/u-wNEA8k1heDBtOU92ZapUEc3i7scrh_eI6usjVdGwymgIi8olLNwUJgjq2S5iaxCYLEjpaZ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        <img src="./drama_images/drama_thum/1711552790381.png" alt="dise">
                     </div>
                     <div class="title">
-                        <h2> How To Build A $10,000 Website With No-Code +AI  </h2>
-                        <a href="#">WeAreNoCode</a>
+                        <h2>🎤상처를 치료해줄 사람 어디 없나 | [화인가 스캔들] 8화 클립 | 디즈니+ </h2>
+                        <a href="#">디즈니+ 코리아</a>
                         <span>video views · time </span>
                     </div>
                 </div>
             </div>
             <div class="video">
                 <div class="thumbnail">
-                    <img src="https://i.ytimg.com/vi/ROjFr9yz0tI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBBMnCqyoipls2ieWWSLwXL2A56pg" alt="">
+                    <img src="./drama_images/drama_thum/1722335098744.jpg" alt="hi9">
                 </div>
                 <div class="details">
                     <div class="logo">
-                        <img src="https://yt3.ggpht.com/u-wNEA8k1heDBtOU92ZapUEc3i7scrh_eI6usjVdGwymgIi8olLNwUJgjq2S5iaxCYLEjpaZ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        <img src="./drama_images/drama_thum/1711552790381.png" alt="">
                     </div>
                     <div class="title">
-                        <h2> How To Build A $10,000 Website With No-Code +AI  </h2>
-                        <a href="#">WeAreNoCode</a>
+                        <h2>너 내가 누군지 아니? 👦…아빠 | [화인가 스캔들] 9화 클립 | 디즈니+ </h2>
+                        <a href="#">디즈니+ 코리아</a>
                         <span>video views · time </span>
                     </div>
                 </div>
             </div>
             <div class="video">
                 <div class="thumbnail">
-                    <img src="https://i.ytimg.com/vi/ROjFr9yz0tI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBBMnCqyoipls2ieWWSLwXL2A56pg" alt="">
+                    <img src="./drama_images/drama_thum/1722335168802.jpg" alt="hi10">
                 </div>
                 <div class="details">
                     <div class="logo">
-                        <img src="https://yt3.ggpht.com/u-wNEA8k1heDBtOU92ZapUEc3i7scrh_eI6usjVdGwymgIi8olLNwUJgjq2S5iaxCYLEjpaZ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        <img src="./drama_images/drama_thum/1711552790381.png" alt="">
                     </div>
                     <div class="title">
-                        <h2> How To Build A $10,000 Website With No-Code +AI  </h2>
-                        <a href="#">WeAreNoCode</a>
+                        <h2>종놈 주제에 나랑 아들은 왜 낳았니? | [화인가 스캔들] 10화 클립 | 디즈니+</h2>
+                        <a href="#">디즈니+ 코리아</a>
                         <span>video views · time </span>
                     </div>
                 </div>
             </div>
             <div class="video">
                 <div class="thumbnail">
-                    <img src="https://i.ytimg.com/vi/ROjFr9yz0tI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBBMnCqyoipls2ieWWSLwXL2A56pg" alt="">
+                    <img src="./drama_images/drama_thum/a4ae661b-f0cb-4611-bfb5-5fb0ef568db7_B.jpg" alt="wifkis">
                 </div>
                 <div class="details">
                     <div class="logo">
-                        <img src="https://yt3.ggpht.com/u-wNEA8k1heDBtOU92ZapUEc3i7scrh_eI6usjVdGwymgIi8olLNwUJgjq2S5iaxCYLEjpaZ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        <img src="./drama_images/drama_thum/009c0c76-2a59-4613-b72e-71fdf0b0535f.png" alt="">
                     </div>
                     <div class="title">
-                        <h2> How To Build A $10,000 Website With No-Code +AI  </h2>
-                        <a href="#">WeAreNoCode</a>
+                        <h2>[키스엔딩] ＂너 미국 가는 거 싫어＂ 김소현, 채종협을 붙잡는 달콤한 키스</h2>
+                        <a href="#">우연일까?</a>
                         <span>video views · time </span>
                     </div>
                 </div>
             </div>
             <div class="video">
                 <div class="thumbnail">
-                    <img src="https://i.ytimg.com/vi/ROjFr9yz0tI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBBMnCqyoipls2ieWWSLwXL2A56pg" alt="">
+                    <img src="./drama_images/drama_thum/b07efae5-dcd9-4dbe-bcd8-0d370993ddb5_B.jpg" alt="wifluv">
                 </div>
                 <div class="details">
                     <div class="logo">
-                        <img src="https://yt3.ggpht.com/u-wNEA8k1heDBtOU92ZapUEc3i7scrh_eI6usjVdGwymgIi8olLNwUJgjq2S5iaxCYLEjpaZ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        <img src="./drama_images/drama_thum/009c0c76-2a59-4613-b72e-71fdf0b0535f.png" alt="">
                     </div>
                     <div class="title">
-                        <h2> How To Build A $10,000 Website With No-Code +AI  </h2>
-                        <a href="#">WeAreNoCode</a>
+                        <h2>5화 하이라이트｜운명처럼 빠지기 시작한 사랑! 첫사랑 기억 소환 로맨스.zip</h2>
+                        <a href="#">우연일까?</a>
                         <span>video views · time </span>
                     </div>
                 </div>
             </div>
             <div class="video">
                 <div class="thumbnail">
-                    <img src="https://i.ytimg.com/vi/ROjFr9yz0tI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBBMnCqyoipls2ieWWSLwXL2A56pg" alt="">
+                    <img src="./drama_images/drama_thum/1723425046199.jpg" alt="squid2_2">
                 </div>
                 <div class="details">
                     <div class="logo">
-                        <img src="https://yt3.ggpht.com/u-wNEA8k1heDBtOU92ZapUEc3i7scrh_eI6usjVdGwymgIi8olLNwUJgjq2S5iaxCYLEjpaZ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        <img src="./drama_images/drama_thum/1467093547237.png" alt="netf">
                     </div>
                     <div class="title">
-                        <h2> How To Build A $10,000 Website With No-Code +AI  </h2>
-                        <a href="#">WeAreNoCode11</a>
+                        <h2>[넷플릭스] 오징어 게임 시즌2 | 참가자 번호 공개</h2>
+                        <a href="#">Netflix Korea</a>
                         <span>video views · time </span>
                     </div>
                 </div>
