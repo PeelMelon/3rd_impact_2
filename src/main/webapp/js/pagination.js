@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         // 활성 페이지 버튼을 업데이트합니다.
-        const buttons = paginationContainer.querySelectorAll("button");
+		const buttons = paginationContainer.querySelectorAll("button");
         buttons.forEach(button => button.classList.remove("active"));
         buttons[pageNumber - 1]?.classList.add("active");
     }
